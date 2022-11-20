@@ -1,7 +1,8 @@
 function bubbleSort(arr){
     if(arr.length <= 1) return arr
-    let len = arr.length, boo = false, lastindex = 0, newLen = arr.length - 1 
+    let len = arr.length, lastindex = 0, newLen = arr.length - 1 
     for(let i = 0; i < len; i++){
+        let boo = false
         for(let j = 0; j< newLen; j++){
             if(arr[j]> arr[j+1]){
                 boo = true
